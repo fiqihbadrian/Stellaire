@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fashion Brand</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>BDRD X Stellaire</h1>
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slides">
+                <!-- Gambar Slide 1 -->
+                <div class="slide" style="background-image: url('./assets/product/hd-black.png');"></div>
+                <!-- Gambar Slide 2 -->
+                <div class="slide" style="background-image: url('./assets/product/hd-white.png');"></div>
+                <!-- Gambar Slide 3 -->
+                <div class="slide" style="background-image: url('./hoodie.jpeg');"></div>
+            </div>
+            <!-- Tombol navigasi -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    
+        <div class="hero-content">
+            <h2>Welcome to Your Fashion Brand</h2>
+            <p style="padding-bottom: 1em;">Exclusive streetwear designs inspired by creativity and uniqueness.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+    
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We believe fashion is an expression of individuality. Our brand offers bold, distinctive designs that are perfect for those who want to stand out.</p>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="./assets/product-on/hd-white/back.jpeg" alt="Fashion Hoodie">
+                <h3>Stylish Hoodie</h3>
+                <p>$59.99</p>
+            </div>
+            <!-- Add more product items here -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 bdrd. All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/index.js"></script>
+</body>
+</html>
